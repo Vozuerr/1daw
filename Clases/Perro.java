@@ -64,11 +64,19 @@ public class Perro {
         return dueño;
     }
   
-    public boolean getPelo() {
-        return pelo;
+    public void getPelo() {
+        if (pelo){
+            System.out.println("Tiene el pelo largo");
+        } else{
+            System.out.println("No tiene el pelo largo");
+        }
     }
     
     public static void ladrar(){
         System.out.println("Guau");
+    }
+
+    public void cumple(){
+        edad++;
     }
 }
